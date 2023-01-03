@@ -1,6 +1,6 @@
 /**
-* Template Name: Presento - v3.9.1
-* Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
+* Template Name: FlexStart - v1.12.0
+* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
@@ -23,13 +23,10 @@
    * Easy event listener function
    */
   const on = (type, el, listener, all = false) => {
-    let selectEl = select(el, all)
-    if (selectEl) {
-      if (all) {
-        selectEl.forEach(e => e.addEventListener(type, listener))
-      } else {
-        selectEl.addEventListener(type, listener)
-      }
+    if (all) {
+      select(el, all).forEach(e => e.addEventListener(type, listener))
+    } else {
+      select(el, all).addEventListener(type, listener)
     }
   }
 
@@ -68,7 +65,7 @@
     let offset = header.offsetHeight
 
     if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
+      offset -= 10
     }
 
     let elementPos = select(el).offsetTop
@@ -157,6 +154,7 @@
       }
     }
   });
+
   /**
    * Clients Slider
    */
@@ -216,9 +214,7 @@
         portfolioIsotope.arrange({
           filter: this.getAttribute('data-filter')
         });
-        portfolioIsotope.on('arrangeComplete', function() {
-          AOS.refresh()
-        });
+        aos_init();
       }, true);
     }
 
@@ -228,7 +224,7 @@
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+    selector: '.portfokio-lightbox'
   });
 
   /**
@@ -236,7 +232,6 @@
    */
   new Swiper('.portfolio-details-slider', {
     speed: 400,
-    loop: true,
     autoplay: {
       delay: 5000,
       disableOnInteraction: false
@@ -267,12 +262,11 @@
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 40
       },
 
       1200: {
         slidesPerView: 3,
-        spaceBetween: 20
       }
     }
   });
@@ -280,13 +274,16 @@
   /**
    * Animation on scroll
    */
-  window.addEventListener('load', () => {
+  function aos_init() {
     AOS.init({
       duration: 1000,
-      easing: 'ease-in-out',
+      easing: "ease-in-out",
       once: true,
       mirror: false
-    })
+    });
+  }
+  window.addEventListener('load', () => {
+    aos_init();
   });
 
   /**
@@ -294,4 +291,4 @@
    */
   new PureCounter();
 
-})()
+})();
