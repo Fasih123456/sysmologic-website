@@ -20,15 +20,18 @@
     color: #535F5E;
     font-size: calc(1.8rem*var(--price-multiply));
     width: fit-content;
-    margin-bottom: calc(3rem*var(--price-multiply));
+    
+    
 }
+
 .plan-nav{
     width: calc(42.1rem*var(--price-multiply));
     height: calc(7.4rem*var(--price-multiply));
-    margin-bottom: calc(6rem*var(--price-multiply));
+    
     
     
 }
+
 .plan-nav button{
     border: none;
     width: 50%;
@@ -50,6 +53,7 @@
     border-radius: 2.2rem 0 0 2.2rem;
 }
 .pricing{
+    margin-top: calc(7rem*var(--price-multiply));
     display: flex;
     flex-direction: row;
     column-gap: calc(1.6rem*var(--price-multiply));
@@ -104,6 +108,7 @@ border-radius: calc(1rem*var(--price-multiply));
     display: flex;
     column-gap: calc(2.4rem*var(--price-multiply));
     padding: 0 calc(4.8rem*var(--price-multiply));
+    margin-top: calc(2rem*var(--price-multiply));
 }
 .features div p{
     font-family: 'Montserrat';
@@ -116,7 +121,9 @@ line-height: calc(2.4rem*var(--price-multiply));
 font-feature-settings: 'pnum' on, 'lnum' on;
 
 /* Text/Body */
+
 color: #808080;
+
 
 }
 .features div img{
@@ -142,6 +149,9 @@ color: #808080;
         
         
     }
+    .pricing-container p {
+        text-align: center;
+    }
     /* .pricing-con{
         justify-content: center;
     } */
@@ -157,6 +167,10 @@ color: #808080;
       }
     .features div{
         height: 3vh;
+        margin-top: calc(0.8rem*var(--price-multiply));
+    }
+    .features div p{
+        text-align: start;
     }
     .focused{
         box-shadow: 2rem 3rem 8rem rgba(253, 98, 12, 0.15);
@@ -239,6 +253,7 @@ color: #808080;
         
         height: 4.5vh;
         text-align: start;
+        margin-top: calc(0.8rem*var(--price-multiply));
         
     }
     

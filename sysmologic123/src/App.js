@@ -14,6 +14,8 @@ import Footer from './components/Footer/Footer.js';
 import Sidebar from './components/sidebar/Sidebar.js';
 import { useState } from 'react';
 
+
+
 function App() {
   const [hide, setHide] = useState(false)
   
@@ -22,21 +24,23 @@ function App() {
   }
   return (
     <>
+    
     <Sidebar onHide={onHide} hide={hide} />
-    <div className='top'>
+    <div className='top' >
       
       <Navbar onHide={onHide}  />
       <Herosection/>
       </div>
-      <Seconddiv/>
-      <Aboutus/>
-      <Services/>
-      <Projects/>
-      <Pricing/>
+      
+      <Aboutus  />
+      <Services  />
+      <Projects />
+      <Pricing  />
       <Clients/>
-      <Team/>
-      <Form/>
+      
+      <Form  />
       <Footer/>
+      
 
     </>
   );

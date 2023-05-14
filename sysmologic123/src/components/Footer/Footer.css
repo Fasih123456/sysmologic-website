@@ -180,7 +180,7 @@ padding-left: calc(2.2rem*var(--footer-multiply));
 @media (max-width:600px)  {
     .footer-container{
         padding: 0;
-        height: 115vh;
+        height: 100vh;
     }
     .footer-top{
         flex-direction: column;
@@ -275,7 +275,7 @@ padding-left: calc(2.2rem*var(--footer-multiply));
         flex-direction: column;
         margin-left: 2vw;
         width: 90vw;
-        height: 110vh;
+        height: 100vh;
 
     }
     .address img{

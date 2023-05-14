@@ -6,7 +6,7 @@ import support from '../img/aboutus/support.svg'
 import security from '../img/aboutus/security.svg'
 const Aboutus = () => {
   return (
-    <div className='container-about'>
+    <div className='container-about' id='aboutus'>
         <div className="about-left">
             <img src={aboutus} alt="" />
         </div>

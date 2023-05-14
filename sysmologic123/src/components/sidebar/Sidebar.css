@@ -42,15 +42,18 @@
     row-gap: 5vh;
 
 }
-.side-con button{
+.nav-btn1{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     border: none;
     background-color: #FE9151;
     color: #FFFFFF;
-    width: 25rem;
-    height: 8rem;
+    width: 25rem !important;
+    height: 8rem !important;
     border-radius: 0.8rem;
-    font-size: 3.2rem;
-    letter-spacing: 2px;
+    font-size: 3.2rem !important;
+    letter-spacing: 2px !important;
     font-family: 'Montserrat', sans-serif;
 }
 

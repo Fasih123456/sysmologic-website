@@ -35,12 +35,18 @@
     margin-top: calc(2rem*var(--hero-multiply));
     margin-bottom: calc(4.036rem*var(--hero-multiply));
 }
-
-.buttons button{
-    
+.buttons{
+    display: flex;
+    column-gap: calc(2.42rem*var(--hero-multiply));
+}
+.buttons a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     width: calc(17.7rem*var(--hero-multiply));
     height: calc(5.4rem*var(--hero-multiply));
-    margin-right: calc(2.42rem*var(--hero-multiply));
+    
     border-radius: calc(0.5rem*var(--hero-multiply));
     font-size: calc(2rem*var(--hero-multiply));
     font-family: 'Montserrat', sans-serif;
@@ -95,7 +101,7 @@
         display: flex;
         justify-content: space-around;
     }
-    .buttons button{
+    .buttons a{
         width: 42vw;
         height: 7vh;
         margin-right: 1vw;
@@ -142,9 +148,9 @@
         display: flex;
         justify-content: space-around;
     }
-    .buttons button{
+    .buttons a{
         width: 42vw;
-        height: 7vh;
+        height: 9vh;
         margin-right: 1vw;
         font-size: 3rem;
         letter-spacing: 2px;

@@ -38,7 +38,7 @@
     flex-direction: column;
     
     
-    height: calc(19.8rem*var(--service-muliple));
+    height: calc(16.8rem*var(--service-muliple));
 }
 .services h2{
     font-size: calc(2.48rem*var(--service-muliple));
@@ -81,8 +81,8 @@
 @media (max-width:600px)  {
     .services-container{
         
-        background-size: 100vw 130vh;
-        height: 135vh;
+        background-size: 100vw 120vh;
+        height: 125vh;
         
         
         
@@ -126,7 +126,7 @@
         height: 5rem;
     }
     .text-service{
-        height: 19vh;
+        height: 15vh;
     }
     .readmore a{
         font-size: 1.4rem;

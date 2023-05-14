@@ -4,17 +4,17 @@ import tick from'../img/pricing/tick.svg'
 import rightarr from '../img/projects/rightarrow.svg'
 const Pricing = () => {
   return (
-    <div className='pricing-container'>
+    <div className='pricing-container' id='pricing'>
         <div className="btn-price">
         <button className='pricing-btn'><img src={rightarr} alt="" className='leftarr-price' /></button>
         <button className='pricing-btn'><img src={rightarr} alt="" className='righarr-price' /></button>
         </div>
         <h1>Choose Your Pricing Plan</h1>
         <p>50% of Payment will be needed up front and the other 50% on delivery. All Prices are in USD. Their are no hidden fees.</p>
-        <div className="plan-nav">
+        {/* <div className="plan-nav">
             <button>Monthly Plan</button>
             <button>Yearly Plan</button>
-        </div>
+        </div> */}
         <div className="pricing">
         <div className="pricing-con unfocused">
             <h3>Basic Website</h3>

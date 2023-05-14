@@ -65,8 +65,8 @@
 
 }
 .projects img{
-    width: calc(27.3rem*var(--project-multiply));
-    height: calc(38.2rem*var(--project-multiply));
+    width: calc(32.3rem*var(--project-multiply));
+    height: calc(45rem*var(--project-multiply));
     overflow: hidden;
     border: 1px solid #FE9347;
     border-radius: calc(1rem*var(--project-multiply));
@@ -121,7 +121,18 @@
 .yellow-navigation{
     background-color: #FE9347 !important;
 }
+.note{
+    margin-top: calc(1.4rem*var(--project-multiply));
+    text-align: center;
+    color: #FE9347;
+    opacity: 0.7;
+    font-size: calc(1.5rem*var(--project-multiply));
+}
 @media (max-width:600px)  {
+    .note{
+        
+        font-size: calc(1.2rem*var(--project-multiply));
+    }
     .navigation{
         display: none;
     }

@@ -15,13 +15,13 @@ const Sidebar = (props) => {
         
         
                 
-                <a href="/">Home</a>
-                <a href="/">Services</a>
-                <a href="/">Projects</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
+        <a href="/">Home</a>
+                <a href="#services" onClick={ () => { onHide()} } >Services</a>
+                <a href="#projects" onClick={ () => { onHide()} } >Projects</a>
+                <a href="#aboutus" onClick={ () => { onHide()} } >About</a>
+                <a href="#contactus" onClick={ () => { onHide()} } >Contact</a>
                 
-                <button>Contact Us</button>
+                <a href="#contactus" onClick={ () => { onHide()} }  className='nav-btn1'>Contact Us</a>
             </div>
     </div>
   )

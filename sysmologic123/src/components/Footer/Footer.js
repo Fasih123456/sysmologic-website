@@ -18,19 +18,12 @@ const Footer = () => {
                 <div className='useful-links'>
                     <h1>Useful links</h1>
                     <a href="/">Home</a>
-                    <a href="/">About</a>
-                    <a href="/">Services</a>
-                    <a href="/">Term of Use</a>
-                    <a href="/">Privacy Policy</a>
+                <a href="#services">Services</a>
+                <a href="#projects">Projects</a>
+                <a href="#aboutus">About</a>
+                <a href="#contactus">Contact</a>
                 </div>
-                <div>
-                    <h1>For Agencies</h1>
-                    <a href="/">Web Design</a>
-                    <a href="/">Web development</a>
-                    <a href="/">Product Management</a>
-                    <a href="/">Marketing</a>
-                    <a href="/">Graphic Design</a>
-                </div>
+                
                 <div>
                     <div>
                         <h1>Subscribe to our Newsletter</h1>
