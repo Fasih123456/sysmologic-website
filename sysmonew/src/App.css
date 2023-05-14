@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.top{
+  height: 115rem;
+  background: url('./components/img/vector.jpg');
+  background-size: 100vw 115rem;
+  background-repeat: no-repeat;
+}
+@media (max-width:600px)  {
+  
+  .top{
+    height: 100vh;
+   
+    background-size: 120vw 100vh;
+    
+  }
+  :root{
+    
+    --seconddiv-multiply: 1 !important;
+    
+    
+}
+}
+@media (min-width:600px) and (max-width: 1000px) {
+  .top{
+    height: 115vh;
+   
+    background-size: 120vw 115vh;
+    
+  }
+  :root{
+    
+    --seconddiv-multiply: 1 !important;
+    
+    
+}
+}
+@media (min-width: 1000px) and (max-width: 1300px)  {
+  :root{
+    --nav-multiply: 1 !important ; 
+    --hero-multiply: 0.9 !important ;
+    --seconddiv-multiply: 1 !important ;
+    --about-multiply: 0.9 !important ;
+    --service-muliple: 0.9 !important ;
+    --project-multiply: 0.7 !important ;
+    --price-multiply: 0.8 !important ;
+    --client-multiply: 0.8 !important ;
+    --team-multiply: 0.8 !important ;
+    --form-multiply: 0.8 !important ;
+    --footer-multiply: 0.8 !important ;
+}
+  .top{
+    height: 83rem;
+    
+    background-size: 100vw 83rem;
+    
+  }
+
+}
+@media (min-width: 1300px) and (max-width: 1600px)  {
+  :root{
+    --nav-multiply: 1.05 !important;
+    --hero-multiply: 0.95 !important;
+    --seconddiv-multiply: 1.05 !important;
+    --about-multiply: 0.95 !important;
+    --service-muliple: 0.95 !important;
+    --project-multiply: 0.75 !important;
+    --price-multiply: 0.85 !important;
+    --client-multiply: 0.85 !important;
+    --team-multiply: 0.85 !important;
+    --form-multiply: 0.85 !important;
+    --footer-multiply: 0.85 !important;
+}
+  .top{
+    height: 83rem;
+    
+    background-size: 100vw 83rem;
+    
+  }
+}
+
+@media (min-width: 2560px) and (max-width: 3839px)  {
+  :root{
+    --nav-multiply: 1.7 !important;
+    --hero-multiply: 1.6 !important;
+    --seconddiv-multiply: 1.7 !important;
+    --about-multiply: 1.6 !important;
+    --service-muliple: 1.6 !important;
+    --project-multiply: 1.4 !important;
+    --price-multiply: 1.5 !important;
+    --client-multiply: 1.5 !important;
+    --team-multiply: 1.5 !important;
+    --form-multiply: 1.5 !important;
+    --footer-multiply: 1.5 !important;
+
+}
+.top{
+  height: 140rem;
+  
+  background-size: 100vw 140rem;
+  
+}
+
+}
+@media (min-width: 3840px) {
+  :root{
+    --nav-multiply: 2.8 !important;
+    --hero-multiply: 2.5 !important;
+    --seconddiv-multiply: 2.6 !important;
+    --about-multiply: 2.6 !important;
+    --service-muliple: 2.6 !important;
+    --project-multiply: 2.1 !important;
+    --price-multiply: 2.6 !important;
+    --client-multiply: 2.6 !important;
+    --team-multiply: 2.6 !important;
+    --form-multiply: 2.6 !important;
+    --footer-multiply: 2.4 !important;
+
+}
+.top{
+  height: calc(100rem*var(--service-muliple));
+  
+  background-size: 100vw calc(100rem*var(--service-muliple));
+  
+}
+}

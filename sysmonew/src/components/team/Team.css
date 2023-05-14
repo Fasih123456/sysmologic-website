@@ -1,0 +1,220 @@
+:root{
+    --team-multiply: 1
+}
+.team-bg{
+    background: url('../img/team-bg.jpg');
+    background-size: 100vw calc(78rem*var(--team-multiply));
+    background-repeat: no-repeat;
+}
+.team-container{
+    display: flex;
+    column-gap: calc(11.6rem*var(--team-multiply));
+    
+    align-items: center;
+    justify-content: center;
+    height: calc(71rem*var(--team-multiply));
+    
+}
+.profile-con{
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: calc(5rem*var(--team-multiply));
+    row-gap: calc(5rem*var(--team-multiply));
+    
+}
+.profile-box-3{
+    grid-column: 2;
+    grid-row: 1 / 3;
+    align-self: center;
+}
+.profile-box{
+    background-color: #FFFFFF;
+    width: calc(26rem*var(--team-multiply));
+    height: calc(29rem*var(--team-multiply));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: calc(2.2rem*var(--team-multiply));
+}
+
+.pfp{
+    width: calc(11.2rem*var(--team-multiply));
+    height: calc(11.2rem*var(--team-multiply));
+    margin-bottom: calc(2rem*var(--team-multiply));
+}
+.name{
+    font-size: calc(1.6rem*var(--team-multiply));
+    margin-bottom: calc(0.4rem*var(--team-multiply));
+    color: #FD620C;
+}
+.role{
+    font-size: calc(1.2rem*var(--team-multiply));
+    margin-bottom: calc(2.2rem*var(--team-multiply));
+    color: #A1A1A1;
+}
+.sm{
+    display: flex;
+    column-gap: calc(2.2rem*var(--team-multiply));
+}
+
+.team-right h1{
+    font-size: calc(4.8rem*var(--team-multiply));
+    font-style: normal;
+font-weight: 700;
+line-height: calc(5.9rem*var(--team-multiply));
+margin-bottom: calc(3.0rem*var(--team-multiply));
+color: #333333;
+}
+.team-right p{
+    font-size: calc(1.8rem*var(--team-multiply));
+    font-weight: 400;
+font-size: calc(1.8rem*var(--team-multiply));
+line-height: calc(3.0rem*var(--team-multiply));
+color: #535F5E;
+
+}
+.team-right a{
+    margin-top: calc(3.4rem*var(--team-multiply));
+    text-decoration: none;
+    display: flex;
+    column-gap: calc(1.2rem*var(--team-multiply));
+    
+    align-items: center;
+}
+.team-right a p{
+    font-size: calc(1.6rem*var(--team-multiply));
+    font-weight: 700;
+line-height: calc(2.2rem*var(--team-multiply));
+color: #FD620C !important;
+}
+.team-right a img{
+    width: calc(1rem*var(--team-multiply));
+    height: calc(1.27rem*var(--team-multiply));
+}
+@media (max-width:600px)  {
+    :root{
+        --team-multiply: 0.4;
+    }
+    .team-bg{
+        
+        background-size: 100vw 45vh;
+        
+    }
+    .team-container{
+        flex-direction: column;
+        width: 100vw;
+        height: 45vh;
+    }
+    .profile-con{
+        display: flex;
+        
+    }
+    .profile-box{
+        height: 17vh;
+    }
+    .pfp {
+        width: 6rem;
+        height: 6rem;
+    }
+    .name{
+        font-size: 0.8rem;
+    }
+    .role{
+        font-size: 0.6rem;
+    }
+    .sm img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .team-right{
+        margin-top: 3vh;
+        width: 95vw;
+        
+    }
+    .team-right h1{
+        font-size: 3rem;
+        line-height: 3.5vh;
+    }
+    .team-right p{
+        font-size: 1.2rem;
+        line-height:2vh;
+        
+    }
+    .team-right a p {
+        font-size: 1.2rem;
+    }
+    .team-right a img {
+        width: 1rem;
+        height: 1rem;
+      }
+}
+@media (min-width:600px) and (max-width: 1000px) {
+    :root{
+        --team-multiply: 0.6;
+    }
+    .team-bg{
+        
+        background-size: 100vw 55vh;
+        
+    }
+    .team-container{
+        flex-direction: column;
+        width: 100vw;
+        height: 55vh;
+    }
+    .profile-con{
+        display: flex;
+        
+    }
+    .profile-box{
+        height: 20vh;
+    }
+    .pfp {
+        width: 9rem;
+        height: 9rem;
+    }
+    .name{
+        font-size: 1.2rem;
+    }
+    .role{
+        font-size: 1rem;
+    }
+    .sm img{
+        width: 3rem;
+        height: 3rem;
+    }
+    .team-right{
+        margin-top: 4vh;
+        width: 95vw;
+        
+    }
+    .team-right h1{
+        font-size: 5rem;
+        line-height: 4vh;
+    }
+    .team-right p{
+        font-size: 2.5rem;
+        line-height:2.4vh;
+        
+    }
+    .team-right a p {
+        font-size: 2rem;
+    }
+    .team-right a img {
+        width: 2rem;
+        height: 2rem;
+      }
+}
+/* @media (min-width: 1000px) and (max-width: 1300px)  {
+    :root{
+        --team-multiply: 0.8;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1600px)  {
+    :root{
+        --team-multiply: 0.8;
+    }
+}
+@media (min-width: 2560px) and (max-width: 3839px)  {}
+@media (min-width: 3840px) {} */
