@@ -1,294 +1,630 @@
-/**
-* Template Name: FlexStart - v1.12.0
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-(function() {
-  "use strict";
+/* ===================================================================
+    
+    Author          : Valid Theme
+    Template Name   : Dixor - Creative Digital Agency Template
+    Version         : 1.0
+    
+* ================================================================= */
+(function($) {
+	"use strict";
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
-  }
+	$(document).ready(function() {
 
-  /**
-   * Easy event listener function
-   */
-  const on = (type, el, listener, all = false) => {
-    if (all) {
-      select(el, all).forEach(e => e.addEventListener(type, listener))
-    } else {
-      select(el, all).addEventListener(type, listener)
-    }
-  }
 
-  /**
-   * Easy on scroll event listener 
-   */
-  const onscroll = (el, listener) => {
-    el.addEventListener('scroll', listener)
-  }
 
-  /**
-   * Navbar links active state on scroll
-   */
-  let navbarlinks = select('#navbar .scrollto', true)
-  const navbarlinksActive = () => {
-    let position = window.scrollY + 200
-    navbarlinks.forEach(navbarlink => {
-      if (!navbarlink.hash) return
-      let section = select(navbarlink.hash)
-      if (!section) return
-      if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-        navbarlink.classList.add('active')
-      } else {
-        navbarlink.classList.remove('active')
-      }
-    })
-  }
-  window.addEventListener('load', navbarlinksActive)
-  onscroll(document, navbarlinksActive)
+		/* ==================================================
+		    # Tooltip Init
+		===============================================*/
+		$('[data-toggle="tooltip"]').tooltip();
 
-  /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
 
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 10
-    }
+		/* ==================================================
+		    # Youtube Video Init
+		 ===============================================*/
+		$('.player').mb_YTPlayer();
 
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
-  }
 
-  /**
-   * Toggle .header-scrolled class to #header when page is scrolled
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    const headerScrolled = () => {
-      if (window.scrollY > 100) {
-        selectHeader.classList.add('header-scrolled')
-      } else {
-        selectHeader.classList.remove('header-scrolled')
-      }
-    }
-    window.addEventListener('load', headerScrolled)
-    onscroll(document, headerScrolled)
-  }
+		/* ==================================================
+		    # Wow Init
+		 ===============================================*/
+		var wow = new WOW({
+			boxClass: 'wow', // animated element css class (default is wow)
+			animateClass: 'animated', // animation css class (default is animated)
+			offset: 0, // distance to the element when triggering the animation (default is 0)
+			mobile: true, // trigger animations on mobile devices (default is true)
+			live: true // act on asynchronously loaded content (default is true)
+		});
+		wow.init();
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
 
-  /**
-   * Mobile nav toggle
-   */
-  on('click', '.mobile-nav-toggle', function(e) {
-    select('#navbar').classList.toggle('navbar-mobile')
-    this.classList.toggle('bi-list')
-    this.classList.toggle('bi-x')
-  })
+		/* ==================================================
+		    _Progressbar Init
+		 ===============================================*/
+		function animateElements() {
+			$('.progressbar').each(function() {
+				var elementPos = $(this).offset().top;
+				var topOfWindow = $(window).scrollTop();
+				var percent = $(this).find('.circle').attr('data-percent');
+				var animate = $(this).data('animate');
+				if (elementPos < topOfWindow + $(window).height() - 30 && !animate) {
+					$(this).data('animate', true);
+					$(this).find('.circle').circleProgress({
+						// startAngle: -Math.PI / 2,
+						value: percent / 100,
+						size: 130,
+						thickness: 5,
+						lineCap: 'round',
+						emptyFill: '#cccccc',
+						fill: {
+							gradient: ['#C9F31D', '#add40c']
+						}
+					}).on('circle-animation-progress', function(event, progress, stepValue) {
+						$(this).find('strong').text((stepValue * 100).toFixed(0) + "%");
+					}).stop();
+				}
+			});
 
-  /**
-   * Mobile nav dropdowns activate
-   */
-  on('click', '.navbar .dropdown > a', function(e) {
-    if (select('#navbar').classList.contains('navbar-mobile')) {
-      e.preventDefault()
-      this.nextElementSibling.classList.toggle('dropdown-active')
-    }
-  }, true)
+		}
 
-  /**
-   * Scrool with ofset on links with a class name .scrollto
-   */
-  on('click', '.scrollto', function(e) {
-    if (select(this.hash)) {
-      e.preventDefault()
+		animateElements();
+		$(window).scroll(animateElements);
 
-      let navbar = select('#navbar')
-      if (navbar.classList.contains('navbar-mobile')) {
-        navbar.classList.remove('navbar-mobile')
-        let navbarToggle = select('.mobile-nav-toggle')
-        navbarToggle.classList.toggle('bi-list')
-        navbarToggle.classList.toggle('bi-x')
-      }
-      scrollto(this.hash)
-    }
-  }, true)
 
-  /**
-   * Scroll with ofset on page load with hash links in the url
-   */
-  window.addEventListener('load', () => {
-    if (window.location.hash) {
-      if (select(window.location.hash)) {
-        scrollto(window.location.hash)
-      }
-    }
-  });
+		/* ==================================================
+		    # Magnific popup init
+		 ===============================================*/
+		$(".popup-link").magnificPopup({
+			type: 'image',
+			// other options
+		});
 
-  /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
+		$(".popup-gallery").magnificPopup({
+			type: 'image',
+			gallery: {
+				enabled: true
+			},
+			// other options
+		});
 
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
+		$(".popup-youtube, .popup-vimeo, .popup-gmaps").magnificPopup({
+			type: "iframe",
+			mainClass: "mfp-fade",
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false
+		});
 
-      let portfolioFilters = select('#portfolio-flters li', true);
+		$('.magnific-mix-gallery').each(function() {
+			var $container = $(this);
+			var $imageLinks = $container.find('.item');
 
-      on('click', '#portfolio-flters li', function(e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function(el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
+			var items = [];
+			$imageLinks.each(function() {
+				var $item = $(this);
+				var type = 'image';
+				if ($item.hasClass('magnific-iframe')) {
+					type = 'iframe';
+				}
+				var magItem = {
+					src: $item.attr('href'),
+					type: type
+				};
+				magItem.title = $item.data('title');
+				items.push(magItem);
+			});
 
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        aos_init();
-      }, true);
-    }
+			$imageLinks.magnificPopup({
+				mainClass: 'mfp-fade',
+				items: items,
+				gallery: {
+					enabled: true,
+					tPrev: $(this).data('prev-text'),
+					tNext: $(this).data('next-text')
+				},
+				type: 'image',
+				callbacks: {
+					beforeOpen: function() {
+						var index = $imageLinks.index(this.st.el);
+						if (-1 !== index) {
+							this.goTo(index);
+						}
+					}
+				}
+			});
+		});
 
-  });
 
-  /**
-   * Initiate portfolio lightbox 
-   */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfokio-lightbox'
-  });
+		/* ==================================================
+            # Hover Active Init
+        ===============================================*/
+		$('.hover-active-item').on('mouseenter', function() {
+			var $this;
+			$this = $(this);
+			if ($this.hasClass('active')) {
+				$this.addClass('active');
+			} else {
+				$this.addClass('active');
+				$this.siblings().removeClass('active');
+			}
+		})
 
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
+		/* ==================================================
+            # Banner Carousel
+         ===============================================*/
+		const swiperCounter = new Swiper(".banner-slide-counter", {
+			// Optional parameters
+			// direction: "vertical",
+			loop: true,
+			grabCursor: true,
+			mousewheel: true,
+			centeredSlides: true,
+			autoplay: false,
+			speed: 1000,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
 
-  /**
-   * Testimonials slider
-   */
-  new Swiper('.testimonials-slider', {
-    speed: 600,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 40
-      },
+			// If we need pagination
+			pagination: {
+				el: '.banner-slide-pagination',
+				type: 'fraction'
+			},
 
-      1200: {
-        slidesPerView: 3,
-      }
-    }
-  });
 
-  /**
-   * Animation on scroll
-   */
-  function aos_init() {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false
-    });
-  }
-  window.addEventListener('load', () => {
-    aos_init();
-  });
+			// Navigation arrows
+			navigation: {
+				nextEl: ".banner-slide-button-next",
+				prevEl: ".banner-slide-button-prev"
+			},
 
-  /**
-   * Initiate Pure Counter 
-   */
-  new PureCounter();
+			breakpoints: {
+				991: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					centeredSlides: false,
+				},
+				992: {
+					slidesPerView: 2.2,
+					spaceBetween: 50,
+				},
+				1400: {
+					slidesPerView: 2.4,
+					spaceBetween: 80,
+				}
+			},
 
-})();
+			// And if we need scrollbar
+			/*scrollbar: {
+            el: '.swiper-scrollbar',
+          },*/
+		});
+
+
+		/* ==================================================
+            # Banner Four
+         ===============================================*/
+
+		var bannerFour = new Swiper('.banner-style-four-carousel', {
+			spaceBetween: 10,
+			loop: true,
+			loopedSlides: 4,
+			effect: "fade",
+			fadeEffect: {
+				crossFade: true
+			},
+		});
+		var bannerBullet = new Swiper('.banner-style-four-bullet', {
+			direction: "vertical",
+			loop: true,
+			grabCursor: true,
+			mousewheel: true,
+			centeredSlides: true,
+			autoplay: false,
+			speed: 1000,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			spaceBetween: 50,
+			slidesPerView: 'auto',
+			touchRatio: 0.2,
+			slideToClickedSlide: true,
+			loopedSlides: 4,
+			breakpoints: {
+				991: {
+					centeredSlides: true,
+				},
+			}
+		});
+		bannerFour.controller.control = bannerBullet;
+		bannerBullet.controller.control = bannerFour;
+
+
+
+		/* ==================================================
+            # Banner Eleven
+         ===============================================*/
+		 let full_portfolio = document.querySelector(".full-screen-portfolio-slider");
+		if (full_portfolio) {
+			const fullSlider = new Swiper('.full-screen-portfolio-slider', {
+				// pass EffectSlicer module to modules
+				modules: [EffectSlicer],
+				// specify "slicer" effect
+				effect: 'slicer',
+				slicerEffect: {
+					split: 5,
+				},
+				direction: 'vertical',
+				loop: true,
+				grabCursor: true,
+				mousewheel: true,
+				navigation: {
+					nextEl: '.full-screen-slider-next',
+					prevEl: '.full-screen-slider-prev',
+				},
+				pagination: {
+					el: '.full-screen-slider-pagination',
+					type: 'fraction',
+					clickable: true,
+				},
+			});
+		}
+
+		/* ==================================================
+            # Banner Twelve
+         ===============================================*/
+		const fullSliderTWo = new Swiper('.full-screen-portfolio-two', {
+			loop: true,
+			grabCursor: true,
+			mousewheel: true,
+			speed: 1000,
+			navigation: {
+				nextEl: '.full-slider-two-next',
+				prevEl: '.full-slider-two-prev',
+			},
+			pagination: {
+				el: '.full-slider-two-pagination',
+				type: 'fraction',
+				clickable: true,
+			},
+		});
+
+
+		/* ==================================================
+            # Portfolio Carousel
+         ===============================================*/
+		const portfolioStyleOneCarousel = new Swiper(".portfolio-style-two-carousel", {
+			// Optional parameters
+			direction: "horizontal",
+			loop: true,
+			autoplay: false,
+			effect: "fade",
+			fadeEffect: {
+				crossFade: true
+			},
+			speed: 1000,
+			// If we need pagination
+			pagination: {
+				el: '.project-pagination',
+				type: 'custom',
+				clickable: true,
+				renderCustom: function(swiper, current, total) {
+					return current + '<span></span>' + (total);
+				}
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: ".project-button-next",
+				prevEl: ".project-button-prev"
+			}
+
+			// And if we need scrollbar
+			/*scrollbar: {
+            el: '.swiper-scrollbar',
+          },*/
+		});
+
+
+		/* ==================================================
+            # Team Carousel
+         ===============================================*/
+		const teamOneCarousel = new Swiper(".team-style-one-carousel", {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			autoplay: false,
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 60,
+				}
+			},
+		});
+
+
+		/* ==================================================
+            # Testimonials Carousel
+         ===============================================*/
+		const testimonialOneCarousel = new Swiper(".testimonial-style-one-carousel", {
+			// Optional parameters
+			direction: "horizontal",
+			loop: true,
+			autoplay: false,
+			speed: 1000,
+
+			// If we need pagination
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+				clickable: true,
+			},
+
+			// Navigation arrows
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			}
+
+			// And if we need scrollbar
+			/*scrollbar: {
+            el: '.swiper-scrollbar',
+          },*/
+		});
+
+
+		/* ==================================================
+            # Testimonial Carousel
+         ===============================================*/
+
+		var testimonialTwo = new Swiper('.testimonial-style-two-carousel', {
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			loop: true,
+			loopedSlides: 4
+		});
+		var testimonialBullet = new Swiper('.testimonial-bullet', {
+			spaceBetween: 10,
+			slidesPerView: 'auto',
+			touchRatio: 0.2,
+			slideToClickedSlide: true,
+			loop: true,
+			loopedSlides: 3,
+			centeredSlides: true,
+		});
+		testimonialTwo.controller.control = testimonialBullet;
+		testimonialBullet.controller.control = testimonialTwo;
+
+
+		/* ==================================================
+            # Testimonials Carousel
+         ===============================================*/
+		const testimonialThreeCarousel = new Swiper(".testimonial-style-three-carousel", {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			autoplay: false,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			// Navigation arrows
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+				}
+			}
+		});
+
+
+		/* ==================================================
+            # Team Carousel
+         ===============================================*/
+		const teamCarousel = new Swiper(".team-carousel", {
+			// Optional parameters
+			direction: "horizontal",
+			loop: true,
+			autoplay: false,
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 50,
+				}
+			},
+
+			// And if we need scrollbar
+			/*scrollbar: {
+            el: '.swiper-scrollbar',
+          },*/
+		});
+
+
+		/* ==================================================
+		    # Brand Carousel
+		 ===============================================*/
+		const brandCarousel = new Swiper(".brand-carousel", {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 2,
+			spaceBetween: 30,
+			autoplay: false,
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true,
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 3,
+					spaceBetween: 30,
+				},
+				992: {
+					slidesPerView: 4,
+					spaceBetween: 30,
+				},
+				1400: {
+					slidesPerView: 5,
+					spaceBetween: 80,
+				}
+			},
+		});
+
+		/* ==================================================
+            # Services Carousel
+         ===============================================*/
+		const servicesCarousel = new Swiper(".services-carousel", {
+			// Optional parameters
+			loop: true,
+			autoplay: false,
+			freeMode: true,
+			grabCursor: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			// Navigation arrows
+			navigation: {
+				nextEl: ".services-button-next",
+				prevEl: ".services-button-prev"
+			},
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 50,
+				},
+				1400: {
+					slidesPerView: 2.8,
+					spaceBetween: 50,
+				},
+
+				1800: {
+					spaceBetween: 70,
+					slidesPerView: 2.8,
+				},
+			},
+		});
+
+
+		/* ==================================================
+            # Project Carousel
+         ===============================================*/
+		const projectStage = new Swiper(".project-center-stage-carousel", {
+			// Optional parameters
+			loop: true,
+			freeMode: true,
+			grabCursor: true,
+			slidesPerView: 1,
+			centeredSlides: true,
+			spaceBetween: 30,
+			autoplay: false,
+			// Navigation arrows
+			navigation: {
+				nextEl: ".project-center-button-next",
+				prevEl: ".project-center-button-prev"
+			},
+			breakpoints: {
+				991: {
+					slidesPerView: 2,
+					spaceBetween: 30,
+					centeredSlides: false,
+				},
+				1200: {
+					slidesPerView: 2.5,
+					spaceBetween: 60,
+				},
+				1800: {
+					slidesPerView: 2.8,
+					spaceBetween: 80,
+				},
+			},
+		});
+
+
+		/* ==================================================
+		    # Brand Carousel
+		 ===============================================*/
+		const brandTwoCarousel = new Swiper(".brand-two-carousel", {
+			// Optional parameters
+			loop: true,
+			slidesPerView: 1,
+			spaceBetween: 30,
+			autoplay: false,
+			breakpoints: {
+				768: {
+					slidesPerView: 2,
+				},
+				992: {
+					slidesPerView: 3,
+				},
+				1400: {
+					slidesPerView: 3,
+				}
+			},
+		});
+
+
+		$(".radio-btn").on("click", function() {
+            $(".radio-inner").toggleClass("active");
+            $("body").toggleClass("bg-dark");
+        })
+
+		$(".radio-btn-light").on("click", function() {
+            $(".radio-inner-light").toggleClass("active");
+            $("body").toggleClass("bg-dark");
+        })
+
+
+		/* ==================================================
+		    Contact Form Validations
+		================================================== */
+		$('.contact-form').each(function() {
+			var formInstance = $(this);
+			formInstance.submit(function() {
+
+				var action = $(this).attr('action');
+
+				$("#message").slideUp(750, function() {
+					$('#message').hide();
+
+					$('#submit')
+						.after('<img src="assets/img/ajax-loader.gif" class="loader" />')
+						.attr('disabled', 'disabled');
+
+					$.post(action, {
+							name: $('#name').val(),
+							email: $('#email').val(),
+							phone: $('#phone').val(),
+							comments: $('#comments').val()
+						},
+						function(data) {
+							document.getElementById('message').innerHTML = data;
+							$('#message').slideDown('slow');
+							$('.contact-form img.loader').fadeOut('slow', function() {
+								$(this).remove()
+							});
+							$('#submit').removeAttr('disabled');
+						}
+					);
+				});
+				return false;
+			});
+		});
+
+
+	}); // end document ready function
+
+	$(window).on('load', function(event) {
+		$('#preloader').delay(500).fadeOut(500);
+	});
+
+
+
+})(jQuery); // End jQuery

@@ -1,0 +1,164 @@
+/* ----------------------------------
+
+Template Name: Dixor - Creative Digital Agency Template
+Author: validtheme
+Description:
+Version: 1.5
+
+Main Font    : Barlow
+Main Color   : #2667FF
+
+-------------------------------------
+
+[Typography]
+
+Body copy:    15px 'Barlow', sans-serif
+Header:     36px 'Barlow', sans-serif
+Input, textarea:  16px 'Barlow', sans-serif
+Sidebar heading:  22px 'Barlow', sans-serif
+
+>>> TABLE OF CONTENTS:
+=======================
+        
+    01. Template default css
+        - Animations
+        - General
+        - Section Title
+        - Video Button
+        - Typography
+        - Tables
+        - Forms
+        - Buttons
+        - Pagination
+        - Colors
+        - Accordion
+        - Tabs
+    02. Preloader
+    03 Navbar
+        - Navbar Default
+        - Navbar Transparent
+        - Navbar Sticky
+        - Navbar Animation
+        - Side Navbar
+    04. Home Page
+        - Home Main
+        - Creative Agency
+        - Showcase Carousel
+        - Showcase Slider
+        - Design Studio
+        - Modern Startup
+    05. Services
+        - Version One
+        - Version Two
+        - Version Three
+        - Version Four
+        - Service Single
+	06. About
+        - Version One
+        - Version Two
+    07. Project
+        - Project Showcase
+        - Project Carousel
+        - Project Grid
+        - Project Single
+    08. Why Choose Us
+    09. Team
+        - Team Version One
+        - Team Version Two
+        - Team Single
+    10. Testimonials
+    11. Why Choose Us
+    12. Faq
+    13. Progress
+    14. Brand / Partner
+    15. Feature
+    16. What We Offer
+    17. Pricing
+    18. Blog
+        - Standard
+        - Grid
+        - Left Sidebar
+        - Right Sidebar
+        - Single
+    21. Error 404
+    22. Footer
+    23. PHP Contact Form
+    24. Others
+
+*/
+
+/*
+** General Styles for HTML tags
+*/
+
+.sysmologic-headingone {
+    transition: all 0.3s ease;
+}
+
+.sysmologic-headingone:hover {
+    color: orangered;
+    font-size: 60px;
+}
+
+/* Services Section Animations */
+.services-style-three-area {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.site-heading {
+    animation: slideInDown 0.6s ease-out;
+}
+
+.site-heading .sub-title {
+    animation: fadeIn 0.5s ease-out 0.2s both;
+}
+
+.site-heading .title {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Portfolio Item Hover Effect */
+.portfolio-style-three-item h2 a {
+    transition: all 0.3s ease;
+    color: inherit;
+}
+
+.portfolio-style-three-item h2 a:hover {
+    color: #ffff00;
+    font-size: 1.2em;
+}
+
+
+
+
