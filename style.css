@@ -91,12 +91,13 @@ Sidebar heading:  22px 'Barlow', sans-serif
 ** General Styles for HTML tags
 */
 
+html { scroll-behavior: smooth; }
 .sysmologic-headingone {
     transition: all 0.3s ease;
 }
 
 .sysmologic-headingone:hover {
-    color: orangered;
+    color: #C9F31D;
     font-size: 60px;
 }
 
@@ -154,10 +155,22 @@ Sidebar heading:  22px 'Barlow', sans-serif
     color: inherit;
 }
 
-.portfolio-style-three-item h2 a:hover {
-    color: #ffff00;
-    font-size: 1.2em;
+
+
+@media (min-width: 1000px) {
+.bg-dark .portfolio-style-three-item h2 a:hover{
+        color: #C9F31D;
+    font-size: 52px;
 }
+
+  .portfolio-style-three-item h2 a {
+    position: relative;
+    right: -109px;
+    font-size: 50px;
+  }
+}
+
+
 
 
 
