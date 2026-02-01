@@ -196,5 +196,9 @@ html { scroll-behavior: smooth; }
     }
 }
 
+.navbar-brand{
+    margin-top: 10px;
+}
+
 
 
