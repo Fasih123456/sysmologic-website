@@ -170,8 +170,31 @@ html { scroll-behavior: smooth; }
   }
 }
 
+@media only screen and (min-width: 400px) and (max-width: 991px) {
+    .banner-style-one-heading h2 {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 400px) {
+    .banner-style-one-heading h2 {
+        margin-left: 10px;
+    }
+}
 
 
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .title-right{
+    margin-left: 72px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px){
+    .dynamicheading{
+        line-height: 0.6 !important;
+    }
+}
 
 
 
