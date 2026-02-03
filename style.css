@@ -204,5 +204,11 @@ html { scroll-behavior: smooth; }
     margin-top: 20px
 }
 
+#alertMessage {
+    font-size: 24px;
+}
+
+
+
 
 
