@@ -1,974 +1,1067 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- ========== Meta Tags ========== -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sysmologic provides modern web development, digital solutions, and scalable software for businesses worldwide.">
-<meta property="og:title" content="Sysmologic - Digital Solutions" />
-<meta property="og:description" content="Modern web development, digital solutions, and scalable software for growing businesses." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://sysmologic.com/" />
-<meta property="og:image" content="https://sysmologic.com/assets/img/sysmologic-logo.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Sysmologic provides modern web development, digital solutions, and scalable software for businesses worldwide."
+    />
+    <meta property="og:title" content="Sysmologic - Digital Solutions" />
+    <meta
+      property="og:description"
+      content="Modern web development, digital solutions, and scalable software for growing businesses."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sysmologic.com/" />
+    <meta property="og:image" content="https://sysmologic.com/assets/img/sysmologic-logo.png" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-11063815016"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11063815016"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-  gtag('config', 'AW-11063815016');
-</script>
-
+      gtag('config', 'AW-11063815016')
+    </script>
 
     <!-- ========== Page Title ========== -->
     <title>Sysmologic - Digital Solutions</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="../assets/img/sysmologic logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/sysmologic logo.png" type="image/x-icon" />
 
     <!-- ========== Start Stylesheet ========== -->
-    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../assets/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../assets/css/magnific-popup.css" rel="stylesheet">
-    <link href="../assets/css/flaticon-set.css" rel="stylesheet">
-    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet">
-    <link href="../assets/css/animate.min.css" rel="stylesheet">
-    <link href="../assets/css/validnavs.css" rel="stylesheet">
-    <link href="../assets/css/helper.css" rel="stylesheet">
-    <link href="../assets/css/unit-test.css" rel="stylesheet">
-    <link href="../assets/css/style.css" rel="stylesheet">
-    <link href="../style.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="../assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="../assets/css/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="../assets/css/animate.min.css" rel="stylesheet" />
+    <link href="../assets/css/validnavs.css" rel="stylesheet" />
+    <link href="../assets/css/helper.css" rel="stylesheet" />
+    <link href="../assets/css/unit-test.css" rel="stylesheet" />
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../style.css" rel="stylesheet" />
     <!-- ========== End Stylesheet ========== -->
 
     <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and
+        security.
+      </p>
     <![endif]-->
+  </head>
 
-</head>
-
-<body class="bg-dark">
-
+  <body class="bg-dark">
     <div class="radio-btn">
-        <div class="radio-inner"></div>
+      <div class="radio-inner"></div>
     </div>
 
     <!-- Start Preloader 
     ============================================= -->
     <div id="preloader">
-        <div class="dixor-loader-inner">
-           <div class="dixor-loader">
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-              <span class="dixor-loader-item"></span>
-           </div>
+      <div class="dixor-loader-inner">
+        <div class="dixor-loader">
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
+          <span class="dixor-loader-item"></span>
         </div>
-     </div>
+      </div>
+    </div>
     <!-- preloader end -->
-     
 
     <!-- Header 
     ============================================= -->
     <header>
-        <!-- Start Navigation -->
-        <nav class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed no-background">
+      <!-- Start Navigation -->
+      <nav
+        class="navbar mobile-sidenav navbar-sticky navbar-default validnavs navbar-fixed no-background"
+      >
+        <div class="container d-flex justify-content-between align-items-center">
+          <div class="menu-left d-flex align-items-center">
+            <!-- Start Header Navigation -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#navbar-menu"
+                style="opacity: 0"
+              >
+                <i class="fa fa-bars"></i>
+              </button>
+              <a class="navbar-brand" href="https://sysmologic.com/">
+                <h1 class="sysmologic-headingone">Sysmologic</h1>
+              </a>
+            </div>
+            <!-- End Header Navigation -->
+          </div>
 
-
-            <div class="container d-flex justify-content-between align-items-center">            
-                
-
-                <div class="menu-left d-flex align-items-center">
-                    <!-- Start Header Navigation -->
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu" style="opacity: 0;">
-                            <i class="fa fa-bars"></i>
-                        </button>
-                        <a class="navbar-brand" href="https://sysmologic.com/">
-                            <h1 class="sysmologic-headingone">Sysmologic</h1>
-                        </a>
-                    </div>
-                    <!-- End Header Navigation -->
-
-                    
-                </div>
-
-                <div class="attr-right">
-                    <!-- Start Atribute Navigation -->
-                    <div class="attr-nav flex">
-                        <ul>
-                            <li class="button">
-                                <a href="../contact-us.html">Get in touch</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- End Atribute Navigation -->
-                    
-
-                </div>
-                <!-- Main Nav -->
-
-            </div>  
-            <!-- Overlay screen for menu -->
-            <div class="overlay-screen"></div>
-            <!-- End Overlay screen for menu --> 
-        </nav>
-        <!-- End Navigation -->
+          <div class="attr-right">
+            <!-- Start Atribute Navigation -->
+            <div class="attr-nav flex">
+              <ul>
+                <li class="button">
+                  <a href="../contact-us.html">Get in touch</a>
+                </li>
+              </ul>
+            </div>
+            <!-- End Atribute Navigation -->
+          </div>
+          <!-- Main Nav -->
+        </div>
+        <!-- Overlay screen for menu -->
+        <div class="overlay-screen"></div>
+        <!-- End Overlay screen for menu -->
+      </nav>
+      <!-- End Navigation -->
     </header>
     <!-- End Header -->
 
     <div class="smooth-scroll-container">
-
-        <!-- Start Banner 
+      <!-- Start Banner 
         ============================================= -->
-       <div class="banner-style-one-area bg-cover" style="background-image: url(assets/img/shape/3.jpg);">
-            <div class="light-banner-active bg-gray bg-cover" style="background-image: url(assets/img/shape/8.jpg);"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-7">
-                        <div class="banner-style-one-heading">
-                            <div class="banner-title">
-                                <h2 class="title-left split-text">BUILD</h>
-                                <h2 class="title-right split-text"> BETTER</h2>
-                            </div>
-                            <div class="thumb wow fadeInRight">
-                                <img class="regular-img" src="../assets/img/illustration/5.png" alt="Image Not Found">
-                                <img class="light-img" src="../assets/img/illustration/8.png" alt="Image Not Found">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 offset-xl-1">
-                        <div class="banner-style-one-info wow fadeInUp" data-wow-delay="1s" data-wow-duration="0.6s">
-                            <div class="top-info">
-                                <h4>EMPOWERING SMALL BUSINESSES WITH IT PRODUCTS IN TORONTO</h4>
-                            </div>
-                            <div class="bottom">
-                                <p>
-                                    We build and host websites that help small organizations meet ambitious goals
-                                </p>
-                                <a href="../contact-us.html" class="btn-style-two mt-30"><i class="fas fa-long-arrow-right"></i> Contact <br> Us</a>
-                            </div>
-                        </div>
-                    </div>
+      <div
+        class="banner-style-one-area bg-cover"
+        style="background-image: url(assets/img/shape/3.jpg)"
+      >
+        <div
+          class="light-banner-active bg-gray bg-cover"
+          style="background-image: url(assets/img/shape/8.jpg)"
+        ></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7">
+              <div class="banner-style-one-heading">
+                <div class="banner-title">
+                  <h2 class="title-left split-text">BUILD</h2>
+                  <h2 class="title-right split-text">BETTER</h2>
                 </div>
+                <div class="thumb wow fadeInRight">
+                  <img
+                    class="regular-img"
+                    src="../assets/img/illustration/5.png"
+                    alt="Image Not Found"
+                  />
+                  <img
+                    class="light-img"
+                    src="../assets/img/illustration/8.png"
+                    alt="Image Not Found"
+                  />
+                </div>
+              </div>
             </div>
+            <div class="col-xl-4 offset-xl-1">
+              <div
+                class="banner-style-one-info wow fadeInUp"
+                data-wow-delay="1s"
+                data-wow-duration="0.6s"
+              >
+                <div class="top-info">
+                  <h4>EMPOWERING SMALL BUSINESSES WITH IT PRODUCTS IN TORONTO</h4>
+                </div>
+                <div class="bottom">
+                  <p>
+                    We build and host websites that help small organizations meet ambitious goals
+                  </p>
+                  <a href="../contact-us.html" class="btn-style-two mt-30"
+                    ><i class="fas fa-long-arrow-right"></i> Contact <br />
+                    Us</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- End Banner -->
+      </div>
+      <!-- End Banner -->
 
-        <!-- Start Services 
+      <!-- Start Services 
         ============================================= -->
-        <div class="services-style-three-area default-padding bg-gray">
-
-            <div class="container">
-                <div class="site-heading">
-                    <div class="row align-center">
-                        <div class="col-lg-12">
-                            <h3 class="sub-title">Our Workflow</h3>
-                            <h2 class="title split-text">TURN INFORMATION INTO PROFIT</h2>
-                        </div>
-
-                    </div>
-                </div>
+      <div class="services-style-three-area default-padding bg-gray">
+        <div class="container">
+          <div class="site-heading">
+            <div class="row align-center">
+              <div class="col-lg-12">
+                <h3 class="sub-title">Our Workflow</h3>
+                <h2 class="title split-text">TURN INFORMATION INTO PROFIT</h2>
+              </div>
             </div>
-
-            <div class="container" >
-                <div class="row">
-                    <div class="col-lg-12">
-                        <ul class="service-style-three-items" id="accordion">
-                            <li class="out">
-                                <div class="service-three-content">
-                                    <div class="top">
-                                        <div class="icon">
-                                            <img class="regular-img" src="../assets/img/icon/12.png" alt="Image Not Found">
-                                            <img class="light-img" src="../assets/img/icon/31.png" alt="Image Not Found">
-                                        </div>
-                                    </div>
-                                    <div class="info">
-                                        <h4>Discovery & Strategy</h4>
-                                        <p>                      
-                                           We start by understanding your business, goals, and audience. We use this information to custom tailer your website to meet your specific needs. This infromation also helps us to advertise your website effectively.
-                                        </p>
-                                    </div>
-                                    <div class="bottom">
-                                        01
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="service-three-content">
-                                    <div class="icon">
-                                        <img class="regular-img" src="../assets/img/icon/13.png" alt="Image Not Found">
-                                        <img class="light-img" src="../assets/img/icon/32.png" alt="Image Not Found">
-                                    </div>
-                                    <div class="info">
-                                        <h4>Design, Development & Review</h4>
-                                        <p>
-                                                We design and develop a fast, modern, and scalable website tailored to your brand. 
-                                                From clean UI and smooth animations to responsive layouts and optimized performance, 
-                                                everything is built with quality in mind. You’re involved throughout the process with regular reviews, 
-                                                so feedback is incorporated early and precisely.
-                                        </p>
-                                    </div>
-                                    <div class="bottom">
-                                        02
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="service-three-content">
-                                    <div class="icon">
-                                        <img class="regular-img" src="../assets/img/icon/15.png" alt="Image Not Found">
-                                        <img class="light-img" src="../assets/img/icon/33.png" alt="Image Not Found">
-                                    </div>
-                                    <div class="info">
-                                        <h4>Launch, Hosting & Growth</h4>
-                                        <p>
-                                           Once your website is ready, we handle deployment, hosting setup, and performance optimization. We also assist with SEO fundamentals, analytics, and marketing integrations so your site is ready to attract and convert visitors from day one.
-                                        </p>
-                                    </div>
-                                    <div class="bottom">
-                                        03
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- End Services -->
 
-        <!-- Start About 
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <ul class="service-style-three-items" id="accordion">
+                <li class="out">
+                  <div class="service-three-content">
+                    <div class="top">
+                      <div class="icon">
+                        <img
+                          class="regular-img"
+                          src="../assets/img/icon/12.png"
+                          alt="Image Not Found"
+                        />
+                        <img
+                          class="light-img"
+                          src="../assets/img/icon/31.png"
+                          alt="Image Not Found"
+                        />
+                      </div>
+                    </div>
+                    <div class="info">
+                      <h4>Discovery & Strategy</h4>
+                      <p>
+                        We start by understanding your business, goals, and audience. We use this
+                        information to custom tailer your website to meet your specific needs. This
+                        information also helps us to advertise your website effectively.
+                      </p>
+                    </div>
+                    <div class="bottom">01</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-three-content">
+                    <div class="icon">
+                      <img
+                        class="regular-img"
+                        src="../assets/img/icon/13.png"
+                        alt="Image Not Found"
+                      />
+                      <img
+                        class="light-img"
+                        src="../assets/img/icon/32.png"
+                        alt="Image Not Found"
+                      />
+                    </div>
+                    <div class="info">
+                      <h4>Design, Development & Review</h4>
+                      <p>
+                        We design and develop a fast, modern, and scalable website tailored to your
+                        brand. From clean UI and smooth animations to responsive layouts and
+                        optimized performance, everything is built with quality in mind. You’re
+                        involved throughout the process with regular reviews, so feedback is
+                        incorporated early and precisely.
+                      </p>
+                    </div>
+                    <div class="bottom">02</div>
+                  </div>
+                </li>
+                <li>
+                  <div class="service-three-content">
+                    <div class="icon">
+                      <img
+                        class="regular-img"
+                        src="../assets/img/icon/15.png"
+                        alt="Image Not Found"
+                      />
+                      <img
+                        class="light-img"
+                        src="../assets/img/icon/33.png"
+                        alt="Image Not Found"
+                      />
+                    </div>
+                    <div class="info">
+                      <h4>Launch, Hosting & Growth</h4>
+                      <p>
+                        Once your website is ready, we handle deployment, hosting setup, and
+                        performance optimization. We also assist with SEO fundamentals, analytics,
+                        and marketing integrations so your site is ready to attract and convert
+                        visitors from day one.
+                      </p>
+                    </div>
+                    <div class="bottom">03</div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Services -->
+
+      <!-- Start About 
         ============================================= -->
-        <div class="about-style-three-area default-padding-bottom bg-gray">
-            <div class="container">
-                <div class="row align-center">
-                    <div class="col-lg-5">
-                        <div class="thumb-style-three">
-                            <img src="../assets/img/toronto.png" alt="Image Not Found">
-                            <div class="upDownScrol scroll-shape"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 offset-lg-1" >
-                        <div class="about-style-three-info text-scroll-animation">
-                            <h2 class="title text">Boost the growth development of your company!</h2>
-                            <div class="d-flex mt-40">
-
-                                <div class="right">
-                                    <p class="text">
-                                        We create websites that help your business attract more customers and drive real results. We also help with post launch hosting, maintenance, and digital marketing to ensure your website continues to perform optimally and attract customers.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="about-style-three-area default-padding-bottom bg-gray">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-lg-5">
+              <div class="thumb-style-three">
+                <img src="../assets/img/toronto.png" alt="Image Not Found" />
+                <div class="upDownScrol scroll-shape"></div>
+              </div>
             </div>
+            <div class="col-lg-6 offset-lg-1">
+              <div class="about-style-three-info text-scroll-animation">
+                <h2 class="title text">Boost the growth development of your company!</h2>
+                <div class="d-flex mt-40">
+                  <div class="right">
+                    <p class="text">
+                      We create websites that help your business attract more customers and drive
+                      real results. We also help with post launch hosting, maintenance, and digital
+                      marketing to ensure your website continues to perform optimally and attract
+                      customers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <!-- End About -->
+      </div>
+      <!-- End About -->
 
-        <div class="services-style-four-area default-padding-bottom overflow-hidden blurry-shape-left">
-            <div class="shape-left-top">
-                <img src="../assets/img/shape/10.png" alt="Image Not Found">
+      <div
+        class="services-style-four-area default-padding-bottom overflow-hidden blurry-shape-left"
+      >
+        <div class="shape-left-top">
+          <img src="../assets/img/shape/10.png" alt="Image Not Found" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="site-heading">
+                <h4 class="sub-title">Services we offer</h4>
+                <h2 class="title split-text">Turn Information Into Actionable Insights</h2>
+              </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="site-heading">
-                            <h4 class="sub-title">Services we offer</h4>
-                            <h2 class="title split-text">Turn Information Into Actionable Insights</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container container-stage">
-    <div class="row">
-        <div class="col-lg-12">
-
-            <div class="services-item-one-items">
+          </div>
+        </div>
+        <div class="container container-stage">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="services-item-one-items">
                 <!-- Navigation -->
                 <div class="services-nav">
-                    <div class="nav-items">
-                        <div class="services-button-prev"></div>
-                        <div class="services-button-next"></div>
-                    </div>
+                  <div class="nav-items">
+                    <div class="services-button-prev"></div>
+                    <div class="services-button-next"></div>
+                  </div>
                 </div>
 
                 <div class="services-carousel swiper">
-                    <div class="swiper-wrapper">
-
-                        <!-- Website & WordPress Development -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>Website & <strong>WordPress Development</strong></a></h4>
-                                    <img src="../assets/img/icon/11.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Custom-built websites and WordPress solutions designed for speed, and ease of use.
-                                </p>
-                                <span>01</span>
-                            </div>
+                  <div class="swiper-wrapper">
+                    <!-- Website & WordPress Development -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>Website & <strong>WordPress Development</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/11.png" alt="Icon" />
                         </div>
-
-                        <!-- CMS & Blog -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>CMS & <strong>Blog Setup</strong></a></h4>
-                                    <img src="../assets/img/icon/12.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Powerful content management systems and blog setups that allow you to update content effortlessly while staying SEO-ready.
-                                </p>
-                                <span>02</span>
-                            </div>
-                        </div>
-
-                        <!-- SEO -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>SEO <strong>(Basic & Advanced)</strong></a></h4>
-                                    <img src="../assets/img/icon/9.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Search engine optimization strategies—from basic on-page SEO to advanced technical optimization—to improve visibility and rankings.
-                                </p>
-                                <span>03</span>
-                            </div>
-                        </div>
-
-                        <!-- Hosting & Email -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>Hosting & <strong>Email Solutions</strong></a></h4>
-                                    <img src="../assets/img/icon/13.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Secure, reliable hosting and professional email solutions that ensure uptime, performance, and business-grade communication.
-                                </p>
-                                <span>04</span>
-                            </div>
-                        </div>
-
-                        <!-- Marketing -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>Digital <strong>Marketing</strong></a></h4>
-                                    <img src="../assets/img/icon/14.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Result-driven digital marketing strategies designed to grow your brand, attract customers, and increase conversions.
-                                </p>
-                                <span>05</span>
-                            </div>
-                        </div>
-
-                        <!-- E-Commerce -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>E-Commerce & <strong>Payment Gateways</strong></a></h4>
-                                    <img src="../assets/img/icon/15.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Complete e-commerce solutions with secure payment gateway integration and product management.
-                                </p>
-                                <span>06</span>
-                            </div>
-                        </div>
-
-                        <!-- Security & Chat -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>Security, Chat & <strong>User Systems</strong></a></h4>
-                                    <img src="../assets/img/icon/16.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Secure data storage, login & registration systems, and multi-tier chat solutions to keep your platform safe and interactive.
-                                </p>
-                                <span>07</span>
-                            </div>
-                        </div>
-
-                        <!-- AMC -->
-                        <div class="swiper-slide">
-                            <div class="cteative-service-item">
-                                <div class="top">
-                                    <h4><a>Annual <strong>Maintenance Contract</strong></a></h4>
-                                    <img src="../assets/img/icon/17.png" alt="Icon">
-                                </div>
-                                <p>
-                                    Ongoing maintenance, updates, backups, and support to ensure your website or application stays secure and up-to-date.
-                                </p>
-                                <span>08</span>
-                            </div>
-                        </div>
-
+                        <p>
+                          Custom-built websites and WordPress solutions designed for speed, and ease
+                          of use.
+                        </p>
+                        <span>01</span>
+                      </div>
                     </div>
-                </div>
 
+                    <!-- CMS & Blog -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>CMS & <strong>Blog Setup</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/12.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Powerful content management systems and blog setups that allow you to
+                          update content effortlessly while staying SEO-ready.
+                        </p>
+                        <span>02</span>
+                      </div>
+                    </div>
+
+                    <!-- SEO -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>SEO <strong>(Basic & Advanced)</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/9.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Search engine optimization strategies—from basic on-page SEO to advanced
+                          technical optimization—to improve visibility and rankings.
+                        </p>
+                        <span>03</span>
+                      </div>
+                    </div>
+
+                    <!-- Hosting & Email -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>Hosting & <strong>Email Solutions</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/13.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Secure, reliable hosting and professional email solutions that ensure
+                          uptime, performance, and business-grade communication.
+                        </p>
+                        <span>04</span>
+                      </div>
+                    </div>
+
+                    <!-- Marketing -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>Digital <strong>Marketing</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/14.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Result-driven digital marketing strategies designed to grow your brand,
+                          attract customers, and increase conversions.
+                        </p>
+                        <span>05</span>
+                      </div>
+                    </div>
+
+                    <!-- E-Commerce -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>E-Commerce & <strong>Payment Gateways</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/15.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Complete e-commerce solutions with secure payment gateway integration and
+                          product management.
+                        </p>
+                        <span>06</span>
+                      </div>
+                    </div>
+
+                    <!-- Security & Chat -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>Security, Chat & <strong>User Systems</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/16.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Secure data storage, login & registration systems, and multi-tier chat
+                          solutions to keep your platform safe and interactive.
+                        </p>
+                        <span>07</span>
+                      </div>
+                    </div>
+
+                    <!-- AMC -->
+                    <div class="swiper-slide">
+                      <div class="cteative-service-item">
+                        <div class="top">
+                          <h4>
+                            <a>Annual <strong>Maintenance Contract</strong></a>
+                          </h4>
+                          <img src="../assets/img/icon/17.png" alt="Icon" />
+                        </div>
+                        <p>
+                          Ongoing maintenance, updates, backups, and support to ensure your website
+                          or application stays secure and up-to-date.
+                        </p>
+                        <span>08</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
+
+      <!-- Start Portfolio 
+        ============================================= -->
+      <div class="portfolio-style-three-area default-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-7 offset-lg-3">
+              <div class="site-heading text-center">
+                <h4 class="sub-title">Popular Projects</h4>
+                <h2 class="title split-text">Featured Works</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="portfolio-style-three-items">
+            <!-- Single Item -->
+            <div class="portfolio-style-three-item">
+              <div class="row align-center">
+                <div class="col-lg-7">
+                  <img src="../assets/img/plans.png" alt="Image Not Found" />
+                </div>
+                <div class="col-lg-5">
+                  <div class="date">2025</div>
+                  <h2 class="dynamicheading">
+                    <a href="https://engineeredplans.ca/">Engineered Plans</a>
+                  </h2>
+                  <p>Toronto based professional services agency</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Item -->
+            <!-- Single Item -->
+            <div class="portfolio-style-three-item">
+              <div class="row align-center">
+                <div class="col-lg-7">
+                  <img src="../assets/img/midmac.png" alt="Image Not Found" />
+                </div>
+                <div class="col-lg-5">
+                  <div class="date">2024</div>
+                  <h2><a href="https://www.midmac.net/">MidMac </a></h2>
+                  <p>UAE based contracting company</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Item -->
+            <!-- Single Item -->
+            <div class="portfolio-style-three-item">
+              <div class="row align-center">
+                <div class="col-lg-7">
+                  <img src="../assets/img/bayc.png" alt="Image Not Found" />
+                </div>
+                <div class="col-lg-5">
+                  <div class="date">2026</div>
+                  <h2><a href="https://precious-lokum-b76104.netlify.app">BAYC</a></h2>
+                  <p>USA based crypto company</p>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-style-three-item">
+              <div class="row align-center">
+                <div class="col-lg-7">
+                  <img src="../assets/img/ameen.png" alt="Image Not Found" />
+                </div>
+                <div class="col-lg-5">
+                  <div class="date">2026</div>
+                  <h2 class="dynamicheading">
+                    <a href="https://ameen-sattar-portfolio.netlify.app/">Personal Portfolio</a>
+                  </h2>
+                  <p>A personal portfolio made to impress future employers</p>
+                </div>
+              </div>
+            </div>
+            <!-- Single Item -->
+          </div>
+        </div>
+      </div>
+      <!-- End Portfolio -->
+
+      <!-- Start Pricing 
+        ============================================= -->
+      <div id="pricing" class="pricing-style-two-area default-padding bottom-less bg-gray">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+              <div class="site-heading text-center">
+                <h4 class="sub-title">Best Pricing(CAD)</h4>
+                <h2 class="title">Affordable pricing checkout Now</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="pricing-style-two-items">
+            <div class="row">
+              <div class="col-lg-12 text-center">
+                <div class="nav nav-tabs pricing-tab-navs" id="nav-tab" role="tablist">
+                  <button
+                    class="nav-link active"
+                    id="nav-id-1"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab1"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab1"
+                    aria-selected="true"
+                  >
+                    <span>New Website</span>
+                  </button>
+                  <button
+                    class="nav-link"
+                    id="nav-id-2"
+                    data-bs-toggle="tab"
+                    data-bs-target="#tab2"
+                    type="button"
+                    role="tab"
+                    aria-controls="tab2"
+                    aria-selected="false"
+                  >
+                    <span>Existing website</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-content pricing-tab-content" id="nav-tabContent">
+              <!-- Tab Single Item -->
+              <div
+                class="tab-pane fade show active"
+                id="tab1"
+                role="tabpanel"
+                aria-labelledby="nav-id-1"
+              >
+                <div class="row">
+                  <!-- Single Item -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="pricing-style-two">
+                      <div class="pricing-header">
+                        <h4>Startup Package</h4>
+                      </div>
+                      <ul>
+                        <li><strong>1-3 page website</strong></li>
+                        <li><strong>Professional, ready made designs</strong></li>
+                        <li>User-friendly (works on all devices)</li>
+                        <li>Contact Form</li>
+                        <li>Fast Delivery</li>
+                        <li>1 Year Of Free Maintenance</li>
+                        <li>1 Year Of Free Hosting</li>
+                      </ul>
+                      <div class="price">
+                        <h2>$275</h2>
+                      </div>
+                      <a
+                        class="btn mt-25 btn-sm circle btn-border dark effect"
+                        href="/contact-us.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+                  <!-- Single Item -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="pricing-style-two">
+                      <div class="pricing-header">
+                        <h4>Business Package</h4>
+                      </div>
+                      <ul>
+                        <li><strong>1-10 Pages</strong></li>
+                        <li>Admin Panel</li>
+                        <li>Payment Gateway</li>
+                        <li>API Integration</li>
+                        <li>Basic SEO</li>
+                        <li>Booking Form</li>
+                        <li>Advance Forms</li>
+                        <li>1 Year Of Free Maintenance</li>
+                        <li>1 Year Of Free Hosting</li>
+                      </ul>
+                      <div class="price">
+                        <h2>$1050</h2>
+                      </div>
+
+                      <a class="btn mt-25 btn-sm circle btn-theme" href="/contact-us.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+                  <!-- Single Item -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="pricing-style-two">
+                      <div class="pricing-header">
+                        <h4>Enterprise Package</h4>
+                      </div>
+                      <ul>
+                        <li><strong>10-30 Pages</strong></li>
+                        <li><strong>E-Commerce website(First 20 products are free)</strong></li>
+                        <li>Admin Panel</li>
+                        <li>Advanced SEO(top 3 google results in most keywords)</li>
+                        <li>Login/Registration</li>
+                        <li>Chat System</li>
+                        <li>1 Year Of Free Maintenance</li>
+                        <li>1 Year Of Free Hosting</li>
+                        <li>Maintenance contract strongly encouraged</li>
+                      </ul>
+                      <div class="price">
+                        <h2>$2050</h2>
+                      </div>
+                      <a
+                        class="btn mt-25 btn-sm circle btn-border dark effect"
+                        href="/contact-us.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+                </div>
+              </div>
+              <!-- End Tab Single Item -->
+
+              <!-- Tab Single Item -->
+              <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
+                <div class="row">
+                  <!-- Single Item -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="pricing-style-two">
+                      <div class="pricing-header">
+                        <h4>Single Annual Website Maintenance</h4>
+                      </div>
+                      <ul>
+                        <li><strong>Reserved for small & medium business websites</strong></li>
+                        <li><strong>Polish the website every 6 months</strong></li>
+                        <li><strong>1 Year of Maintenance</strong></li>
+                        <li><strong>1 Year Of Hosting</strong></li>
+                      </ul>
+                      <div class="price">
+                        <h2>$175</h2>
+                      </div>
+                      <a
+                        class="btn mt-25 btn-sm circle btn-border dark effect"
+                        href="/contact-us.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+                  <!-- Single Item -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="pricing-style-two">
+                      <div class="pricing-header">
+                        <h4>Multiple Annual Website Maintenance</h4>
+                      </div>
+                      <ul>
+                        <li><strong>Reserved for small & medium business websites</strong></li>
+                        <li><strong>Polish the website every 6 months</strong></li>
+                        <li><strong>3 Year of Maintenance</strong></li>
+                        <li><strong>3 Year Of Hosting</strong></li>
+                      </ul>
+                      <div class="price">
+                        <h2><del>$550</del>$475</h2>
+                      </div>
+                      <a
+                        class="btn mt-25 btn-sm circle btn-border dark effect"
+                        href="/contact-us.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+                  <!-- Single Item -->
+                  <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
+                    <div class="pricing-style-two">
+                      <div class="pricing-header">
+                        <h4>Enterprise Annual Website Maintenance</h4>
+                      </div>
+                      <ul>
+                        <li><strong>Reserved for Enterprise level websites</strong></li>
+                        <li><strong>Polish the website every 6 months</strong></li>
+                        <li>3 Year of Maintenance</li>
+                        <li>3 Year Of Hosting</li>
+                      </ul>
+                      <div class="price">
+                        <h2>$750</h2>
+                      </div>
+                      <a class="btn mt-25 btn-sm circle btn-theme" href="/contact-us.html"
+                        >Get Started</a
+                      >
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+                </div>
+              </div>
+
+              <!-- End Tab Single Item -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Pricing -->
+
+      <!-- Start Testimonial 
+        ============================================= -->
+      <div class="testimonial-style-three-area default-padding">
+        <div class="shape-style-one">
+          <img class="upDownScrol" src="../assets/img/shape/14.png" alt="Image Not Found" />
+        </div>
+        <div class="container">
+          <div class="testimonial-heading">
+            <div class="row">
+              <div class="col-lg-8">
+                <h2 class="text-large-gradient">Testimonials</h2>
+              </div>
+              <div class="col-lg-4 text-end">
+                <div class="testimonial-three-quote">
+                  <h2>5.0</h2>
+                  <div class="info">
+                    <div class="ratings">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                    <span>6 (Reviews)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="testimonial-style-three-carousel swiper">
+                <div class="swiper-wrapper">
+                  <!-- Single Item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-style-three-item">
+                      <div class="tes-rating">
+                        <span>5.0</span>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p>
+                        I wanted a website built for my online business. Sysmologic was really quick
+                        and professional in developing a custom website for my online business. He
+                        is open to changing project requirements and good at listening to problems.
+                      </p>
+                      <div class="tm-provider">
+                        <div class="content">
+                          <h4>Sabih Ul Islam</h4>
+                          <span class="project-title-name">Engineeredplans CEO</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End Single Item -->
+
+                  <!-- Single Item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-style-three-item">
+                      <div class="tes-rating">
+                        <span>5.0</span>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p>
+                        I asked him to copy a website and he did exactly that. The website looked
+                        exactly like the original and when I asked to modify some components of the
+                        website, he did it right away without any complaints. He always communicated
+                        with me and whenever I had a question about his code, he answered it clearly
+                        and descriptively. He is very friendly, hard-working, dedicated, and easy to
+                        work. I would definitely work with him again. Thank you for providing the
+                        best service!
+                      </p>
+                      <div class="tm-provider">
+                        <div class="content">
+                          <h4>jiermyu</h4>
+                          <span>BAYC client</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- End Single Item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-style-three-item">
+                      <div class="tes-rating">
+                        <span>5.0</span>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p>
+                        I asked Sysmogloic to create a website for me after my previous web
+                        developer took control of the website because I refused to pay a monthly
+                        fee. I have to say that Fasih did a better job in terms of the quality of
+                        the website and customer service.
+                      </p>
+                      <div class="tm-provider">
+                        <div class="content">
+                          <h4>Thabo Mbeki</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-style-three-item">
+                      <div class="tes-rating">
+                        <span>5.0</span>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p>Sysmogloic was great to work with, very responsive and did great work.</p>
+                      <div class="tm-provider">
+                        <div class="content">
+                          <h4>Davis36</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- End Single Item -->
+                  <div class="swiper-slide">
+                    <div class="testimonial-style-three-item">
+                      <div class="tes-rating">
+                        <span>5.0</span>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p>
+                        I love it when a seller or developer is so naturally talented and skilled
+                        that you always admire their work. It's like a much needed breath of fresh
+                        air, far exceeding my expectations. Don't hesitate to hire him. I highly
+                        recommend Sysmologic to whoever wants amazing results!
+                      </p>
+                      <div class="tm-provider">
+                        <div class="content">
+                          <h4>brandiepatrick</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="testimonial-style-three-item">
+                      <div class="tes-rating">
+                        <span>5.0</span>
+                        <div class="icon">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                      </div>
+                      <p>Zero friction, high output. Sysmogloic really knows there stuff.</p>
+                      <div class="tm-provider">
+                        <div class="content">
+                          <h4>Ameen Sataar</h4>
+                          <span>Personal Portfolio Client</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <br />
+                <br />
+
+                <!-- Navigation -->
+                <div class="testimonial-control">
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-nav-left">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                </div>
+                <p style="text-align: center; font-size: 20px; font-style: italic">
+                  Proof for all Testimonials can be provided on request.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Testimonial -->
+
+      <!-- Start Footer 
+        ============================================= -->
+      <footer>
+        <div class="footer-box">
+          <div class="container">
+            <div class="f-items">
+              <div class="row">
+                <!-- Singel Item -->
+                <div class="col-lg footer-item about pr-120 pr-md-15 pr-xs-15 pr-md-15 pr-xs-15">
+                  <div class="top">
+                    <h2>Get Support?</h2>
+                    <a class="quick-btn" href="mailto:fasihislam@sysmologic.com"
+                      ><i class="fas fa-long-arrow-right"></i
+                    ></a>
+                  </div>
+                  <ul class="address-list">
+                    <li>
+                      <h4>Canada Branch</h4>
+                      <p>117 Broadway AVE, Toronto, Ontario</p>
+                      <p>+1 226-499-1056</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- End Singel Item -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer Bottom -->
+          <div class="footer-bottom">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="footer-social">
+                    <li>
+                      <a href="https://www.facebook.com/profile.php?id=100089449054625"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                    </li>
+                    <li>
+                      <a href="https://www.linkedin.com/company/sysmologic/"
+                        ><i class="fab fa-linkedin-in"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6 text-end">
+                  <p>Copyright &copy; 2024 Sysmologic. All Rights Reserved</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End Footer Bottom -->
+        </div>
+      </footer>
+      <!-- End Footer -->
     </div>
-</div>
-
-        </div>
-
-        <!-- Start Portfolio 
-        ============================================= -->
-        <div class="portfolio-style-three-area default-padding">
-            <div class="container" >
-                <div class="row">
-                    <div class="col-lg-7 offset-lg-3">
-                        <div class="site-heading text-center">
-                            <h4 class="sub-title">Popular Projects</h4>
-                            <h2 class="title split-text">Featured Works</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="container">
-                <div class="portfolio-style-three-items">
-                    <!-- Single Item -->
-                    <div class="portfolio-style-three-item">
-                        <div class="row align-center">
-                            <div class="col-lg-7">
-                                <img src="../assets/img/plans.png" alt="Image Not Found">
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="date">2025</div>
-                                <h2 class="dynamicheading"><a href="https://engineeredplans.ca/">Engineered Plans</a></h2>
-                                <p>Toronto based professional services agency</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Item -->
-                    <!-- Single Item -->
-                    <div class="portfolio-style-three-item">
-                        <div class="row align-center">
-                            <div class="col-lg-7">
-                                <img src="../assets/img/midmac.png" alt="Image Not Found">
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="date">2024</div>
-                                <h2><a href="https://www.midmac.net/">MidMac </a></h2>
-                                <p>UAE based contracting company</p>
-
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Item -->
-                    <!-- Single Item -->
-                    <div class="portfolio-style-three-item">
-                        <div class="row align-center">
-                            <div class="col-lg-7">
-                                <img src="../assets/img/bayc.png" alt="Image Not Found">
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="date">2026</div>
-                                <h2><a href="https://precious-lokum-b76104.netlify.app">BAYC</a></h2>
-                                <p>USA based crypto company</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="portfolio-style-three-item">
-                        <div class="row align-center">
-                            <div class="col-lg-7">
-                                <img src="../assets/img/ameen.png" alt="Image Not Found">
-                            </div>
-                            <div class="col-lg-5">
-                                <div class="date">2026</div>
-                                <h2 class="dynamicheading"><a href="https://ameen-sattar-portfolio.netlify.app/">Personal Portfolio</a></h2>
-                                <p>A personal portfolio made to impress future employers</p>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Single Item -->
-                </div>
-            </div>
-        </div>
-        <!-- End Portfolio -->
-
-       
-
-        <!-- Start Pricing 
-        ============================================= -->
-        <div id="pricing" class="pricing-style-two-area default-padding bottom-less bg-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
-                        <div class="site-heading text-center">
-                            <h4 class="sub-title">Best Pricing(CAD)</h4>
-                            <h2 class="title">Affordable pricing checkout Now</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="pricing-style-two-items">
-                    <div class="row">
-                        <div class="col-lg-12 text-center">
-                            
-                            <div class="nav nav-tabs pricing-tab-navs" id="nav-tab" role="tablist">
-                                <button class="nav-link active" id="nav-id-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">
-                                    <span>New Website</span>
-                                </button>
-                                <button class="nav-link" id="nav-id-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">
-                                    <span>Existing website</span>
-                                </button>
-    
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="tab-content pricing-tab-content" id="nav-tabContent">
-
-                        <!-- Tab Single Item -->
-                        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="nav-id-1">
-                            <div class="row">
-                                <!-- Single Item -->
-                                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                                    <div class="pricing-style-two">
-                                        <div class="pricing-header">
-                                            <h4>Startup Package</h4>
-                                        </div>
-                                        <ul>
-                                            <li><strong>1-3 page website</strong></li>
-                                            <li><strong>Professional ready made designs</strong></li>
-                                            <li>User friendly(works on all devices)</li>
-                                            <li>Contact Form</li>
-                                            <li>Fast Delivery</li>
-                                            <li>1 Year Of Free Maintenance</li>
-                                            <li>1 Year Of Free Hosting</li>
-                                        </ul>
-                                        <div class="price">
-                                            <h2><del>$575</del>$300</h2>
-                                        </div>
-                                        <a class="btn mt-25 btn-sm circle btn-border dark effect" href="/contact-us.html">Get Started</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                                    <div class="pricing-style-two">
-                                        <div class="pricing-header">
-                                            <h4>Business Package</h4>
-                                        </div>
-                                        <ul>
-                                            <li><strong>1-10 Pages</strong></li>
-                                            <li>Admin Panel</li>
-                                            <li>Payment Gateway</li>
-                                            <li>API Integration</li>
-                                            <li>Basic SEO(Google visibility setup)</li>
-                                            <li>Booking Form</li>
-                                            <li>Customizable Forms(can have file attachments)</li>
-                                            <li>13 Months Of Free Maintenance</li>
-                                            <li>13 Months Of Free Hosting</li>
-                                        </ul>
-                                        <div class="price">
-                                            <h2><del>$1400</del>$925</h2>
-                                        </div>
-                                        
-                                         <a class="btn mt-25 btn-sm circle btn-theme" href="/contact-us.html">Get Started</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                                    <div class="pricing-style-two">
-                                        <div class="pricing-header">
-                                            <h4>Enterprise Package</h4>
-                                            
-                                        </div>
-                                        <ul>
-                                            <li><strong>10-30 Pages</strong></li>
-                                            <li><strong>E-Commerce website(First 20 products are free)</strong></li>
-                                            <li>Admin Panel</li>
-                                            <li>Advanced SEO(top 3 google results in most keywords)</li>
-                                            <li>Login/Registration</li>
-                                            <li>Chat System</li>
-                                            <li>E-Commerce Functionality</li>
-                                            <li>14 Months Months Of Free Maintenance</li>
-                                            <li>14 Months Of Free Hosting</li>
-                                            <li>Maintenance contract strongly encouraged</li>
-                                        </ul>
-                                        <div class="price">
-                                            <h2><del>$5175</del>$3450</h2>
-                                        </div>
-                                       <a class="btn mt-25 btn-sm circle btn-border dark effect" href="/contact-us.html">Get Started</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                            </div>
-                        </div>
-                        <!-- End Tab Single Item -->
-    
-                        <!-- Tab Single Item -->
-                        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="nav-id-2">
-                            <div class="row">
-                                <!-- Single Item -->
-                                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                                    <div class="pricing-style-two">
-                                        <div class="pricing-header">
-                                            <h4>Single Annual Website Maintenance</h4>
-
-                                        </div>
-                                        <ul>
-
-                                            <li><strong>Reserved for small & Medium business websites</strong></li>
-                                            <li><strong>Polish the website every 6 months</strong></li>
-                                            <li><strong>1 Year of Maintenance</strong></li>
-                                            <li><strong>1 Year Of Hosting</strong></li>
-                                        </ul>
-                                        <div class="price">
-                                            <h2>$275</h2>
-                                        </div>
-                                        <a class="btn mt-25 btn-sm circle btn-border dark effect" href="/contact-us.html">Get Started</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                <!-- Single Item -->
-                                <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                                    <div class="pricing-style-two">
-                                        <div class="pricing-header">
-                                            <h4>Multiple Annual Website Maintenance</h4>
-                                        </div>
-                                        <ul>
-                                            <li><strong>Reserved for small & Medium business websites</strong></li>
-                                            <li><strong>Polish the website every 3 months</strong></li>
-                                            <li><strong>3 Year of Maintenance</strong></li>
-                                            <li><strong>3 Year Of Hosting(8 Months Free)</strong></li>
-                                        </ul>
-                                        <div class="price">
-                                            <h2><del>$825</del>$625</h2>
-                                        </div>
-                                        <a class="btn mt-25 btn-sm circle btn-border dark effect" href="/contact-us.html">Get Started</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                                 <!-- Single Item -->
-                                 <div class="col-xl-4 col-lg-6 col-md-6 mb-30">
-                                    <div class="pricing-style-two">
-                                        <div class="pricing-header">
-                                            <h4>Enterprise Annual Website Maintenance</h4>
-                                        </div>
-                                        <ul>
-                                            <li><strong>Reserved for Enterprise level websites</strong></li>
-                                            <li><strong>Polish the website every 3 months</strong></li>
-                                            <li>3 Year of Maintenance</li>
-                                            <li>3 Year Of Hosting</li>
-                                        </ul>
-                                        <div class="price">
-                                            <h2>$3075</h2>
-                                        </div>
-                                        <a class="btn mt-25 btn-sm circle btn-theme" href="/contact-us.html">Get Started</a>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-                            </div>
-                        </div>
-                        
-                        <!-- End Tab Single Item -->
-                    </div>
-                
-                </div>
-            </div>
-        </div>
-        <!-- End Pricing -->
-
-        
-
-        <!-- Start Testimonial 
-        ============================================= -->
-        <div class="testimonial-style-three-area default-padding">
-            <div class="shape-style-one">
-                <img class="upDownScrol" src="../assets/img/shape/14.png" alt="Image Not Found">
-            </div>
-            <div class="container">
-                <div class="testimonial-heading">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <h2 class="text-large-gradient">
-                                Testimonials
-                            </h2>
-                            
-                        </div>
-                        <div class="col-lg-4 text-end">
-                            <div class="testimonial-three-quote">
-                                <h2>5.0</h2>
-                                <div class="info">
-                                    <div class="ratings">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                    </div>
-                                    <span>6 (Reviews)</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-
-                        <div class="testimonial-style-three-carousel swiper">
-                            <div class="swiper-wrapper">
-                                <!-- Single Item -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-style-three-item">
-                                        <div class="tes-rating">
-                                            <span>5.0</span>
-                                            <div class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p>
-                                            I wanted a website built for my online business. Sysmologic was really quick and
-                    professional in developing a custom website for my online business. He is open
-                    to changing project requirements and good at listening to problems.
-                    </p>
-                                        <div class="tm-provider">
-                                            <div class="content">
-                                                <h4>Sabih Ul Islam</h4>
-                                                <span class="project-title-name">Engineeredplans CEO<span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
-
-                                <!-- Single Item -->
-                                <div class="swiper-slide">
-                                    <div class="testimonial-style-three-item">
-                                        <div class="tes-rating">
-                                            <span>5.0</span>
-                                            <div class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p>
-                                             I asked him to copy a website and he did exactly that. The website looked
-                    exactly like the original and when I asked to modify some components of the
-                    website, he did it right away without any complaints. He always communicated
-                    with me and whenever I had a question about his code, he answered it clearly and
-                    descriptively. He is very friendly, hard-working, dedicated, and easy to work. I
-                    would definitely work with him again. Thank you for providing the best service!
-                                        </p>
-                                        <div class="tm-provider">
-
-                                            <div class="content">
-                                                <h4>jiermyu</h4>
-                                                <span>BAYC client</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- End Single Item -->
-                                 <div class="swiper-slide">
-                                    <div class="testimonial-style-three-item">
-                                        <div class="tes-rating">
-                                            <span>5.0</span>
-                                            <div class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p>
-                    I asked Sysmogloic to create a website for me after my previous web developer
-                    took control of the website because I refused to pay a monthly fee. I have to
-                    say that Fasih did a better job in terms of the quality of the website and
-                    customer service.
-                                        </p>
-                                        <div class="tm-provider">
-
-                                            <div class="content">
-                                                <h4>Thabo Mbeki</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-style-three-item">
-                                        <div class="tes-rating">
-                                            <span>5.0</span>
-                                            <div class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p>
-                    Sysmogloic was great to work with, very responsive and did great work.
-                                        </p>
-                                        <div class="tm-provider">
-
-                                            <div class="content">
-                                                <h4>Davis36</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- End Single Item -->
-                                 <div class="swiper-slide">
-                                    <div class="testimonial-style-three-item">
-                                        <div class="tes-rating">
-                                            <span>5.0</span>
-                                            <div class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p>
-                    I love it when a seller or developer is so naturally talented and skilled that you always admire their work. It's like a much needed breath of fresh air, far exceeding my expectations. Don't hesitate to hire him. I highly recommend Sysmologic to whoever wants amazing results!
-                                        </p>
-                                        <div class="tm-provider">
-
-                                            <div class="content">
-                                                <h4>brandiepatrick</h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial-style-three-item">
-                                        <div class="tes-rating">
-                                            <span>5.0</span>
-                                            <div class="icon">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p>
-                    Zero friction, high output. Sysmogloic really knows there stuff.
-                                        </p>
-                                        <div class="tm-provider">
-
-                                            <div class="content">
-                                                <h4>Ameen Sataar</h4>
-                                                <span>Personal Portfolio Client<span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                            <br>
-                            <br>
-
-
-                            
-
-                            <!-- Navigation -->
-                            <div class="testimonial-control">
-                                <div class="swiper-pagination"></div>
-                                <div class="swiper-nav-left">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-                                </div>
-                            </div>
-                            <p style="text-align: center; font-size: 20px; font-style: italic; ">Proof for all Testimonials can be provided on request.</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Testimonial -->
-
-        
-
-        <!-- Start Footer 
-        ============================================= -->
-        <footer>
-            <div class="footer-box">
-                <div class="container">
-                    <div class="f-items">
-                        <div class="row">
-                            <!-- Singel Item -->
-                            <div class="col-lg footer-item about pr-120 pr-md-15 pr-xs-15 pr-md-15 pr-xs-15">
-                                <div class="top">
-                                    <h2>Get Support?</h2>
-                                    <a class="quick-btn" href="mailto:fasihislam@sysmologic.com"><i class="fas fa-long-arrow-right"></i></a>
-                                </div>
-                                <ul class="address-list">
-                                    <li>
-                                        <h4>Canada</h4>
-                                        <p>
-                                            65 Times Avenue, Toronto, ON L3T 7X9
-                                        </p>
-                                    </li>
-                                </ul>
-                            </div>
-                            <!-- End Singel Item -->
-
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Footer Bottom -->
-                <div class="footer-bottom">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <ul class="footer-social">
-                                    <li><a href="https://www.facebook.com/profile.php?id=100089449054625"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company/sysmologic/"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <p>
-                                    Copyright &copy; 2024 Sysmologic. All Rights Reserved
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- End Footer Bottom -->
-            </div>
-        </footer>
-        <!-- End Footer -->
-    </div>
-
 
     <!-- jQuery Frameworks
     ============================================= -->
@@ -994,6 +1087,5 @@
     <script src="../assets/js/SplitText.min.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/gsap-init.js"></script>
-
-</body>
+  </body>
 </html>
